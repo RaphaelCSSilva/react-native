@@ -38,7 +38,8 @@
     "test": "jest",
     "fantom": "./scripts/fantom.sh",
     "trigger-react-native-release": "node ./scripts/releases-local/trigger-react-native-release.js",
-    "update-lock": "npx yarn-deduplicate"
+    "update-lock": "npx yarn-deduplicate",
+    "postinstall": "node ./test.js"
   },
   "workspaces": [
     "packages/*",
